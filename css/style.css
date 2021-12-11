@@ -1,0 +1,306 @@
+@font-face {
+  font-family: Cocogoose;
+  src: url("../fonts/Cocogoose_trial.otf"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+header {
+  background-color: #2E3657;
+  font-family: 'Montserrat', sans-serif;
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* Finaliza mobile*/ }
+  header .logo {
+    width: auto;
+    height: 2.5vh;
+    padding-left: 30px;
+    padding-top: 2px; }
+  header nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-right: 20px;
+    /* menu mobile */ }
+    header nav label {
+      position: absolute;
+      display: none;
+      top: 0;
+      right: 0;
+      height: 70px;
+      width: 70px;
+      background: #2E3657;
+      cursor: pointer;
+      z-index: 1; }
+    header nav > label > span {
+      display: block;
+      margin: 4px auto;
+      height: 4px;
+      width: 25px;
+      border-radius: 1px;
+      background: #e3e0e0;
+      transition: 0.5s; }
+      header nav > label > span:nth-child(1) {
+        margin-top: 40px; }
+  header a {
+    list-style: none;
+    text-decoration: none;
+    color: #E19A65; }
+    header a:hover {
+      color: white;
+      text-decoration: none; }
+  header .menu {
+    position: relative;
+    margin-top: 6px;
+    float: right;
+    list-style-type: none;
+    transition: top 0.5s cubic-bezier(0.3, 0.1, 0.3, 0.85); }
+    header .menu li {
+      font-family: 'Montserrat', sans-serif;
+      color: #ede4e4;
+      font-size: 1.4rem;
+      display: inline;
+      padding: 10px;
+      margin-right: 30px;
+      cursor: pointer; }
+    header .menu img {
+      width: 26px;
+      height: 26px; }
+  header input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+    header input[type=checkbox]:checked ~ .menu {
+      top: 0; }
+    header input[type=checkbox]:checked ~ label span {
+      background: #2E3657; }
+      header input[type=checkbox]:checked ~ label span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); }
+      header input[type=checkbox]:checked ~ label span:nth-child(2) {
+        opacity: 0; }
+      header input[type=checkbox]:checked ~ label span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); }
+
+@media (max-width: 1093px) {
+  header .logo {
+    padding-left: 25px; }
+  header .menu {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    top: -100vh;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    background: #2E3657;
+    z-index: 1; }
+    header .menu li {
+      margin: 20px;
+      font-size: 1.8em; }
+  header nav label {
+    display: block;
+    z-index: 10; }
+    header nav label span {
+      background: #E19A65; } }
+
+@media only screen and (max-width: 550px) {
+  header {
+    height: 15vh; }
+    header .logo {
+      height: 2.3em; } }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2E3657;
+  height: 88vh;
+  font-family: Cocogoose; }
+  main .imgPrincipal {
+    height: 10vh;
+    margin-top: 7rem; }
+  main .txtMain {
+    width: 60%;
+    text-align: center;
+    margin-top: 12rem;
+    font-size: 2.5rem;
+    color: #E19A65;
+    line-height: 1.7; }
+
+#queHacemos {
+  font-family: 'Montserrat', sans-serif;
+  height: 105vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem; }
+  #queHacemos h1 {
+    color: #2E3657;
+    font-size: 3rem;
+    margin-bottom: 3rem; }
+    #queHacemos h1 span {
+      color: #E19A65; }
+  #queHacemos .botonSaberMas {
+    font-family: 'Montserrat', sans-serif;
+    color: #E19A65;
+    background-color: #2E3657;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 1rem; }
+    #queHacemos .botonSaberMas:hover {
+      color: #2E3657;
+      background-color: #E19A65; }
+  #queHacemos .contenedorQueHacemos {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #queHacemos .contenedorQueHacemos .iconosQueHacemos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem; }
+      #queHacemos .contenedorQueHacemos .iconosQueHacemos .iconQH {
+        width: 8rem; }
+      #queHacemos .contenedorQueHacemos .iconosQueHacemos .parrafoQH {
+        font-weight: 700;
+        color: #2E3657;
+        width: 60%;
+        text-align: center; }
+
+#nosotros {
+  font-family: 'Montserrat', sans-serif;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #nosotros .infoQuienesSomos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #nosotros .infoQuienesSomos .tituloNosotros {
+      font-size: 3rem;
+      color: #2E3657; }
+      #nosotros .infoQuienesSomos .tituloNosotros span {
+        color: #E19A65; }
+    #nosotros .infoQuienesSomos .parrafoNosotros {
+      width: 60%;
+      text-align: center;
+      margin-top: 2.5rem;
+      color: #484a55;
+      line-height: 2; }
+  #nosotros .infoNosotros {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center; }
+    #nosotros .infoNosotros .cardsNosotros {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%; }
+      #nosotros .infoNosotros .cardsNosotros .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        #nosotros .infoNosotros .cardsNosotros .card .imgCard {
+          width: 30%;
+          border-radius: 10px; }
+        #nosotros .infoNosotros .cardsNosotros .card .txtCard {
+          margin: 2rem;
+          color: #484a55; }
+          #nosotros .infoNosotros .cardsNosotros .card .txtCard .tituloCard {
+            color: #E19A65; }
+          #nosotros .infoNosotros .cardsNosotros .card .txtCard .parrafoCard {
+            line-height: 1.6;
+            margin-top: 1rem; }
+
+.empresas {
+  padding-top: 80px; }
+  .empresas .empresasTitulo {
+    color: #2E3657;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-align: center; }
+    .empresas .empresasTitulo span {
+      color: #E19A65; }
+  .empresas .empresasCards {
+    width: 100%; }
+    .empresas .empresasCards .empresasImagen {
+      margin: 135px 40px; }
+  .empresas .swiper-button-next, .empresas .swiper-button-prev {
+    color: #E19A65; }
+  .empresas .swiper-pagination {
+    display: none; }
+
+footer {
+  height: 35vh;
+  background-color: #0B0706;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #8f8a8a;
+  font-family: 'Montserrat', sans-serif; }
+  footer .firmaBrand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .firmaBrand img {
+      height: 1rem; }
+    footer .firmaBrand .txtBrand {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 0.5rem; }
+  footer .socialMedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem; }
+    footer .socialMedia .redesSociales {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row; }
+      footer .socialMedia .redesSociales .column div {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem; }
+        footer .socialMedia .redesSociales .column div a {
+          text-decoration: none; }
+        footer .socialMedia .redesSociales .column div .txtRedesSociales {
+          color: #8f8a8a; }
+        footer .socialMedia .redesSociales .column div i {
+          color: lightskyblue;
+          margin-left: 1rem;
+          font-size: 25px; }
+          footer .socialMedia .redesSociales .column div i:hover {
+            color: white; }

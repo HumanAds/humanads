@@ -5,9 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HumanAds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
-    
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+        <nav>
+            <input type="checkbox" id="nav">
+            <label for="nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="menu">
+                <li><a href="#queHacemos">Que hacemos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#link_metodologia">Novedades</a>
+                <li><a href="pages/blog.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <img class="imgPrincipal" src="./img/Logo.png" alt="">
+        <h1 class="txtMain">“Mejorar la comunicación entre las personas, ayuda a fortalecer la educación para el desarrollo humano”</h1>
+    </main>
+
+    <section id="queHacemos">
+        <h1>¿Qué <span>hacemos?</span></h1>
+        <div class="contenedorQueHacemos">
+            <div class="iconosQueHacemos">
+                <img class="iconQH" src="./img/Organizacion y Gestion Institucional.png" alt="">
+                <p class="parrafoQH">Organización y gestión Institucional</p>
+            </div>
+            <div class="iconosQueHacemos">
+                <img class="iconQH" src="./img/Fortalecimiento de la Cultura Institucional.png" alt="">
+                <p class="parrafoQH">Fortalecimiento de la cultura Institucional</p>
+            </div>
+            <div class="iconosQueHacemos">
+                <img class="iconQH" src="./img/Comunicacion Institucional.png" alt="">
+                <p class="parrafoQH">Comunicación Institucional</p>
+            </div>
+            <div class="iconosQueHacemos">
+                <img class="iconQH" src="./img/Comunicacion de Crisis Institucional.png" alt="">
+                <p class="parrafoQH">Comunicación de Crisis Institucional (CCI)</p>
+            </div>
+            <div class="iconosQueHacemos">
+                <img class="iconQH" src="./img/Liderazgo y Motivacion.png" alt="">
+                <p class="parrafoQH">Liderazgo y Motivación</p>
+            </div>
+            <div class="iconosQueHacemos">
+                <img class="iconQH" src="./img/Valoracion Reconocimientos e Incentivos.png" alt="">
+                <p class="parrafoQH">Valoración, Reconocimientos e Incentivos</p>
+            </div>
+            <div class="iconosQueHacemos">
+                <img class="iconQH" src="./img/Relacion de la Comunidad.png" alt="">
+                <p class="parrafoQH">Relación con la Comunidad y Contexto (RSI)</p>
+            </div>
+        </div>
+        <a class="botonSaberMas" href="">Ver más</a>
+    </section>
+
+    <section id="nosotros">
+        <div class="infoQuienesSomos">
+            <h1 class="tituloNosotros">¿Quienes <span>somos?</span></h1>
+            <p class="parrafoNosotros">HumanAds es una consultora especialista en comunicación institucional orientada a la construcción de marca y al sostenimiento de su reputación.
+                <br>
+                La buena comunicación es un elemento clave para consolidar la relación entre directivos, empleados y clientes,
+                fortaleciendo una cultura 
+                del trabajo que posibilita el crecimiento de las personas y las organizaciones.
+                <br>
+                HumanAds es un equipo de profesionales experimentados en procesos de implementación de acciones disruptivas para lograr la necesaria transformación humana y tecnológica en las organizaciones que demandan competitividad y progreso sostenible.</p>
+        </div>
+        <div class="infoNosotros">
+            <div class="cardsNosotros">
+                <div class="card">
+                    <img class="imgCard" src="./img/marcelo bar color 1.jpg" alt="">
+                    <div class="txtCard">
+                        <h2 class="tituloCard">Marcelo Hasse</h2>
+                       <p class="parrafoCard">Arquitecto (UBA) – Máster en Dirección de Comunicación Corporativa (Universidad de Barcelona) <br>
+                        Con una larga trayectoria como asesor de empresas dedicadas al sector del transporte público de personas y del turismo en América Latina, donde las relaciones humanas conviven en zonas de conflicto permanente.
+                        </p> 
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img class="imgCard" src="./img/FOTO MARIEL.jpeg" alt="">
+                    <div class="txtCard">
+                        <h2 class="tituloCard">Mariel Strahman</h2>
+                       <p class="parrafoCard">
+                        Lic. en Ciencias de la Educación
+                        <br>
+                        Con más de 20 años de experiencia en el sector público y privado asesorando en temas referidos a la gestión institucional y al acompañamiento y fortalecimiento de equipos de trabajo.
+                        </p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <div class="empresas">
+        <h1 class="empresasTitulo">Empresas y provincias que <br> <span>confían en nosotros</span> </h1>
+        <div class="swiper empresasCards swiper-container">
+            <div class="swiper-wrapper">
+                <img src="./img/neuquen.png" class="empresasImagen swiper-slide" alt="">
+                <img src="./img/rosario.png" class="empresasImagen swiper-slide" alt="">
+                <img src="./img/cordoba.png" class="empresasImagen swiper-slide" alt=""> 
+                <img src="./img/mendoza.png" class="empresasImagen swiper-slide" alt="">
+                <img src="./img/jujuy.png" class="empresasImagen swiper-slide" alt="">
+                <img src="./img/metropol.png" class="empresasImagen swiper-slide" alt="">
+                <img src="./img/colonia.png" class="empresasImagen swiper-slide" alt="">
+                <img src="./img/coniferal.png" class="empresasImagen swiper-slide" alt="">
+                <img src="./img/cacique.png" class="empresasImagen swiper-slide" alt="">
+                <img src="./img/viabariloche.png" class="empresasImagen swiper-slide" alt="">
+            </div>
+            <div class="swiper-button-prev prev_empresas"></div>
+            <div class="swiper-button-next next_empresas"></div>
+            <div class="swiper-pagination pag_empresas"></div>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer>
+        <div class="firmaBrand">
+            <img  src="./img/Logo.png" alt="">
+            <p class="txtBrand">Consultoría y Comunicación Institucional</p>
+        </div>
+        <div class="socialMedia">
+            <p>Seguinos en</p>
+            <div class="redesSociales">
+                <div class="column">
+                    <div>
+                        <a href=""><p class="txtRedesSociales">+54 91151104017</p></a>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><p class="txtRedesSociales">@HumanAdsOk</p></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>  
+                </div>
+                <div class="column">
+                    <div>
+                        <a href=""><p class="txtRedesSociales">@HumanAdsOk</p></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><p class="txtRedesSociales">@HumanAdsOk</p></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>  
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
