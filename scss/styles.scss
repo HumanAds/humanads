@@ -85,7 +85,7 @@ header {
         color: $colorSecundario;
 
         &:hover {
-            color: rgb(177, 172, 172);
+            color: rgb(201, 197, 197);
             text-decoration: none;
         }
     }
@@ -238,7 +238,7 @@ main {
         text-align: center;
         margin-top: 12rem;
         font-size: 2.4rem;
-        color: $colorSecundario;
+        color: rgb(230, 227, 227);
         line-height: 1.7;
         text-shadow: 2px 2px 2px rgb(52, 50, 50);
     }
@@ -373,7 +373,8 @@ main {
 
 
                 .imgCard {
-                    width: 30%;
+                    width: 15rem;
+                    height: 17rem;;
                     border-radius: 10px;
                 }
 
@@ -396,26 +397,31 @@ main {
     }
 }
 
+
+// ---------- POR QUE ELEGIRNOS ------------- //
+
 #elegirnos {
     font-family: 'Montserrat', sans-serif;
     height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+}
 
-    .infoElegirnos {
+.infoElegirnos {
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .tituloElegirnos {
     font-size: 3rem;
     color: $colorPrimario;
     text-align: center;
-    
+
 
     span {
         color: $colorSecundario;
@@ -431,6 +437,8 @@ main {
     margin-top: 40px;
 }
 
+
+// ---------- NUESTRO PODCAST ----------- //
 
 #podcast {
     display: flex;
@@ -470,6 +478,69 @@ main {
 }
 
 
+// ---------- CONTACTO ----------- //
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 4rem;
+
+    h1 {
+        font-size: 3rem;
+        color: $colorPrimario;
+        text-shadow: 1px 1px 1px rgb(82, 80, 80);
+
+        span {
+            color: $colorSecundario
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .cardsContacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70%;
+        margin-top: 4rem;
+
+        .cardInfoContacto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            img {
+                width: 7rem;
+            }
+
+            p{
+                color:  $colorSecundario;
+                margin-top: 1rem;
+                font-family: Cocogoose;
+            }
+
+            .txtContacto {
+                margin-top: 1rem;
+                text-align: center;
+                font-weight: 600;
+                color: $colorPrimario;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    }
+
+}
+
+// ---------- EMPRESAS ----------- //
+
 #empresas {
     padding-top: 80px;
 
@@ -480,6 +551,7 @@ main {
         font-size: 3rem;
         text-align: center;
         text-shadow: 1px 1px 1px rgb(82, 80, 80);
+        margin-top: 4rem;
 
         span {
             color: $colorSecundario;

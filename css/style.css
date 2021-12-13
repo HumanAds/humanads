@@ -60,7 +60,7 @@ header {
     text-decoration: none;
     color: #E19A65; }
     header a:hover {
-      color: #b1acac;
+      color: #c9c5c5;
       text-decoration: none; }
   header .menu {
     position: relative;
@@ -149,7 +149,7 @@ main {
     text-align: center;
     margin-top: 12rem;
     font-size: 2.4rem;
-    color: #E19A65;
+    color: #e6e3e3;
     line-height: 1.7;
     text-shadow: 2px 2px 2px #343232; }
 
@@ -243,7 +243,8 @@ main {
         justify-content: center;
         align-items: center; }
         #nosotros .infoNosotros .cardsNosotros .card .imgCard {
-          width: 30%;
+          width: 15rem;
+          height: 17rem;
           border-radius: 10px; }
         #nosotros .infoNosotros .cardsNosotros .card .txtCard {
           margin: 2rem;
@@ -308,6 +309,46 @@ main {
       color: #484a55;
       margin: 2rem; }
 
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 4rem; }
+  #contacto h1 {
+    font-size: 3rem;
+    color: #2E3657;
+    text-shadow: 1px 1px 1px #525050; }
+    #contacto h1 span {
+      color: #E19A65; }
+  #contacto a {
+    text-decoration: none; }
+  #contacto .cardsContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin-top: 4rem; }
+    #contacto .cardsContacto .cardInfoContacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #contacto .cardsContacto .cardInfoContacto img {
+        width: 7rem; }
+      #contacto .cardsContacto .cardInfoContacto p {
+        color: #E19A65;
+        margin-top: 1rem;
+        font-family: Cocogoose; }
+      #contacto .cardsContacto .cardInfoContacto .txtContacto {
+        margin-top: 1rem;
+        text-align: center;
+        font-weight: 600;
+        color: #2E3657;
+        font-family: 'Montserrat', sans-serif; }
+
 #empresas {
   padding-top: 80px; }
   #empresas .empresasTitulo {
@@ -315,7 +356,8 @@ main {
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     text-align: center;
-    text-shadow: 1px 1px 1px #525050; }
+    text-shadow: 1px 1px 1px #525050;
+    margin-top: 4rem; }
     #empresas .empresasTitulo span {
       color: #E19A65; }
   #empresas .empresasCards {
