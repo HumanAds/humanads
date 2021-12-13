@@ -255,6 +255,35 @@ main {
             line-height: 1.6;
             margin-top: 1rem; }
 
+#elegirnos {
+  font-family: 'Montserrat', sans-serif;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.infoElegirnos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.tituloElegirnos {
+  font-size: 3rem;
+  color: #2E3657;
+  text-align: center; }
+  .tituloElegirnos span {
+    color: #E19A65; }
+
+.parrafoElegirnos {
+  text-align: center;
+  list-style-position: inside;
+  color: #484a55;
+  line-height: 2rem;
+  width: 60%;
+  margin-top: 40px; }
+
 #podcast {
   display: flex;
   flex-direction: column;
@@ -293,7 +322,8 @@ main {
     width: 100%; }
     #empresas .empresasCards .empresasImagen {
       margin: 135px 40px; }
-  #empresas .swiper-button-next, #empresas .swiper-button-prev {
+  #empresas .swiper-button-next,
+  #empresas .swiper-button-prev {
     color: #E19A65; }
   #empresas .swiper-pagination {
     display: none; }

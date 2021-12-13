@@ -396,6 +396,41 @@ main {
     }
 }
 
+#elegirnos {
+    font-family: 'Montserrat', sans-serif;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+    .infoElegirnos {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;}
+
+.tituloElegirnos {
+    font-size: 3rem;
+    color: $colorPrimario;
+    text-align: center;
+    
+
+    span {
+        color: $colorSecundario;
+    }
+}
+
+.parrafoElegirnos {
+    text-align: center;
+    list-style-position: inside;
+    color: #484a55;
+    line-height: 2rem;
+    width: 60%;
+    margin-top: 40px;
+}
+
 
 #podcast {
     display: flex;
