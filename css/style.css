@@ -60,7 +60,7 @@ header {
     text-decoration: none;
     color: #E19A65; }
     header a:hover {
-      color: white;
+      color: #b1acac;
       text-decoration: none; }
   header .menu {
     position: relative;
@@ -93,6 +93,13 @@ header {
         opacity: 0; }
       header input[type=checkbox]:checked ~ label span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg); }
+
+.dark {
+  background-color: white; }
+  .dark a {
+    color: #2E3657; }
+    .dark a:hover {
+      color: #E19A65; }
 
 @media (max-width: 1093px) {
   header .logo {
@@ -141,9 +148,10 @@ main {
     width: 60%;
     text-align: center;
     margin-top: 12rem;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color: #E19A65;
-    line-height: 1.7; }
+    line-height: 1.7;
+    text-shadow: 2px 2px 2px #343232; }
 
 #queHacemos {
   font-family: 'Montserrat', sans-serif;
@@ -157,7 +165,8 @@ main {
   #queHacemos h1 {
     color: #2E3657;
     font-size: 3rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 1px #525050; }
     #queHacemos h1 span {
       color: #E19A65; }
   #queHacemos .botonSaberMas {
@@ -169,7 +178,8 @@ main {
     padding: 0.5rem;
     border-radius: 10px;
     font-weight: 600;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.5); }
     #queHacemos .botonSaberMas:hover {
       color: #2E3657;
       background-color: #E19A65; }
@@ -191,7 +201,8 @@ main {
         font-weight: 700;
         color: #2E3657;
         width: 60%;
-        text-align: center; }
+        text-align: center;
+        text-shadow: 0.1px 0.1px 0.1px #6c6a6a; }
 
 #nosotros {
   font-family: 'Montserrat', sans-serif;
@@ -207,7 +218,8 @@ main {
     align-items: center; }
     #nosotros .infoQuienesSomos .tituloNosotros {
       font-size: 3rem;
-      color: #2E3657; }
+      color: #2E3657;
+      text-shadow: 1px 1px 1px #525050; }
       #nosotros .infoQuienesSomos .tituloNosotros span {
         color: #E19A65; }
     #nosotros .infoQuienesSomos .parrafoNosotros {
@@ -237,27 +249,53 @@ main {
           margin: 2rem;
           color: #484a55; }
           #nosotros .infoNosotros .cardsNosotros .card .txtCard .tituloCard {
-            color: #E19A65; }
+            color: #E19A65;
+            text-shadow: 0.3px 0.3px 0.3px #2E3657; }
           #nosotros .infoNosotros .cardsNosotros .card .txtCard .parrafoCard {
             line-height: 1.6;
             margin-top: 1rem; }
 
-.empresas {
+#podcast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif; }
+  #podcast h1 {
+    font-size: 3rem;
+    color: #2E3657;
+    text-shadow: 1px 1px 1px #525050; }
+    #podcast h1 span {
+      color: #E19A65; }
+  #podcast .infoPodcast {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem; }
+    #podcast .infoPodcast a .imgPodcast {
+      width: 10rem; }
+    #podcast .infoPodcast .txtPodcast {
+      color: #484a55;
+      margin: 2rem; }
+
+#empresas {
   padding-top: 80px; }
-  .empresas .empresasTitulo {
+  #empresas .empresasTitulo {
     color: #2E3657;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
-    text-align: center; }
-    .empresas .empresasTitulo span {
+    text-align: center;
+    text-shadow: 1px 1px 1px #525050; }
+    #empresas .empresasTitulo span {
       color: #E19A65; }
-  .empresas .empresasCards {
+  #empresas .empresasCards {
     width: 100%; }
-    .empresas .empresasCards .empresasImagen {
+    #empresas .empresasCards .empresasImagen {
       margin: 135px 40px; }
-  .empresas .swiper-button-next, .empresas .swiper-button-prev {
+  #empresas .swiper-button-next, #empresas .swiper-button-prev {
     color: #E19A65; }
-  .empresas .swiper-pagination {
+  #empresas .swiper-pagination {
     display: none; }
 
 footer {
@@ -303,4 +341,66 @@ footer {
           margin-left: 1rem;
           font-size: 25px; }
           footer .socialMedia .redesSociales .column div i:hover {
-            color: white; }
+            color: #E19A65; }
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.hvr-shutter-out-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+.hvr-shutter-out-vertical:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #E19A65;
+  border-radius: 10px;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-shutter-out-vertical:hover,
+.hvr-shutter-out-vertical:focus,
+.hvr-shutter-out-vertical:active {
+  color: white; }
+
+.hvr-shutter-out-vertical:hover:before,
+.hvr-shutter-out-vertical:focus:before,
+.hvr-shutter-out-vertical:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1); }

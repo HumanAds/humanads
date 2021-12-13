@@ -10,11 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+        <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo" data-aos="fade-down"></a>
         <nav>
             <input type="checkbox" id="nav">
             <label for="nav">
@@ -22,7 +23,7 @@
                 <span></span>
                 <span></span>
             </label>
-            <ul class="menu">
+            <ul class="menu" data-aos="fade-down">
                 <li><a href="#queHacemos">Que hacemos</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#link_metodologia">Novedades</a>
@@ -33,46 +34,46 @@
     </header>
 
     <main>
-        <img class="imgPrincipal" src="./img/Logo.png" alt="">
-        <h1 class="txtMain">“Mejorar la comunicación entre las personas, ayuda a fortalecer la educación para el desarrollo humano”</h1>
+        <img class="imgPrincipal" src="./img/Logo.png" data-aos="fade-right" alt="logo">
+        <h1 class="txtMain" data-aos="fade-right">“Mejorar la comunicación entre las personas, ayuda a fortalecer la educación para el desarrollo humano”</h1>
     </main>
 
-    <section id="queHacemos">
+    <section id="queHacemos" data-aos="fade-right">
         <h1>¿Qué <span>hacemos?</span></h1>
         <div class="contenedorQueHacemos">
-            <div class="iconosQueHacemos">
+            <div class="iconosQueHacemos hvr-grow">
                 <img class="iconQH" src="./img/Organizacion y Gestion Institucional.png" alt="">
                 <p class="parrafoQH">Organización y gestión Institucional</p>
             </div>
-            <div class="iconosQueHacemos">
+            <div class="iconosQueHacemos hvr-grow">
                 <img class="iconQH" src="./img/Fortalecimiento de la Cultura Institucional.png" alt="">
                 <p class="parrafoQH">Fortalecimiento de la cultura Institucional</p>
             </div>
-            <div class="iconosQueHacemos">
+            <div class="iconosQueHacemos hvr-grow">
                 <img class="iconQH" src="./img/Comunicacion Institucional.png" alt="">
                 <p class="parrafoQH">Comunicación Institucional</p>
             </div>
-            <div class="iconosQueHacemos">
+            <div class="iconosQueHacemos hvr-grow">
                 <img class="iconQH" src="./img/Comunicacion de Crisis Institucional.png" alt="">
                 <p class="parrafoQH">Comunicación de Crisis Institucional (CCI)</p>
             </div>
-            <div class="iconosQueHacemos">
+            <div class="iconosQueHacemos hvr-grow">
                 <img class="iconQH" src="./img/Liderazgo y Motivacion.png" alt="">
                 <p class="parrafoQH">Liderazgo y Motivación</p>
             </div>
-            <div class="iconosQueHacemos">
+            <div class="iconosQueHacemos hvr-grow">
                 <img class="iconQH" src="./img/Valoracion Reconocimientos e Incentivos.png" alt="">
                 <p class="parrafoQH">Valoración, Reconocimientos e Incentivos</p>
             </div>
-            <div class="iconosQueHacemos">
+            <div class="iconosQueHacemos hvr-grow">
                 <img class="iconQH" src="./img/Relacion de la Comunidad.png" alt="">
                 <p class="parrafoQH">Relación con la Comunidad y Contexto (RSI)</p>
             </div>
         </div>
-        <a class="botonSaberMas" href="">Ver más</a>
+        <a class="botonSaberMas hvr-shutter-out-vertical" href="./queHacemos.html">Ver más</a>
     </section>
 
-    <section id="nosotros">
+    <section id="nosotros" data-aos="fade-right">
         <div class="infoQuienesSomos">
             <h1 class="tituloNosotros">¿Quienes <span>somos?</span></h1>
             <p class="parrafoNosotros">HumanAds es una consultora especialista en comunicación institucional orientada a la construcción de marca y al sostenimiento de su reputación.
@@ -86,7 +87,7 @@
         <div class="infoNosotros">
             <div class="cardsNosotros">
                 <div class="card">
-                    <img class="imgCard" src="./img/marcelo bar color 1.jpg" alt="">
+                    <img class="imgCard hvr-grow" src="./img/marcelo bar color 1.jpg" alt="">
                     <div class="txtCard">
                         <h2 class="tituloCard">Marcelo Hasse</h2>
                        <p class="parrafoCard">Arquitecto (UBA) – Máster en Dirección de Comunicación Corporativa (Universidad de Barcelona) <br>
@@ -96,7 +97,7 @@
                     
                 </div>
                 <div class="card">
-                    <img class="imgCard" src="./img/FOTO MARIEL.jpeg" alt="">
+                    <img class="imgCard hvr-grow" src="./img/FOTO MARIEL.jpeg" alt="">
                     <div class="txtCard">
                         <h2 class="tituloCard">Mariel Strahman</h2>
                        <p class="parrafoCard">
@@ -111,12 +112,18 @@
     </section>
 
 
+    <section id="podcast" data-aos="fade-right">
+        <h1>Nuestro <span>Podcast</span></h1>
+        <div class="infoPodcast">
+            <p class="txtPodcast">Escuchanos en</p>
+            <a href=""><img class="imgPodcast" src="./img/spotify-logo.png" alt=""></a>
+        </div>
+    </section>
 
 
 
 
-
-    <div class="empresas">
+    <section id="empresas" data-aos="fade-right">
         <h1 class="empresasTitulo">Empresas y provincias que <br> <span>confían en nosotros</span> </h1>
         <div class="swiper empresasCards swiper-container">
             <div class="swiper-wrapper">
@@ -135,8 +142,8 @@
             <div class="swiper-button-next next_empresas"></div>
             <div class="swiper-pagination pag_empresas"></div>
         </div>
-    </div>
-</section>
+    </section>
+
 
 
 
@@ -175,6 +182,13 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1000,
+        });
+      </script>
     <script src="./js/script.js"></script>
 </body>
 </html>
