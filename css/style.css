@@ -48,9 +48,9 @@ header {
     header nav > label > span {
       display: block;
       margin: 4px auto;
-      height: 4px;
+      height: 2px;
       width: 25px;
-      border-radius: 1px;
+      border-radius: 2px;
       background: #e3e0e0;
       transition: 0.5s; }
       header nav > label > span:nth-child(1) {
@@ -86,13 +86,13 @@ header {
     header input[type=checkbox]:checked ~ .menu {
       top: 0; }
     header input[type=checkbox]:checked ~ label span {
-      background: #2E3657; }
+      background: #E19A65; }
       header input[type=checkbox]:checked ~ label span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg); }
+        transform: translateY(6px) rotate(45deg); }
       header input[type=checkbox]:checked ~ label span:nth-child(2) {
         opacity: 0; }
       header input[type=checkbox]:checked ~ label span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg); }
+        transform: translateY(-6px) rotate(-45deg); }
 
 .dark {
   background-color: white; }
@@ -114,13 +114,13 @@ header {
     margin: 0;
     top: -100vh;
     left: 0;
-    height: 80vh;
+    height: 60vh;
     width: 100%;
     background: #2E3657;
     z-index: 1; }
     header .menu li {
-      margin: 20px;
-      font-size: 1.8em; }
+      margin: 10px;
+      font-size: 1em; }
   header nav label {
     display: block;
     z-index: 10; }
@@ -129,9 +129,10 @@ header {
 
 @media only screen and (max-width: 550px) {
   header {
-    height: 15vh; }
+    height: 15vh;
+    position: absolute; }
     header .logo {
-      height: 2.3em; } }
+      height: 0.9em; } }
 
 main {
   display: flex;
@@ -152,6 +153,18 @@ main {
     color: #e6e3e3;
     line-height: 1.7;
     text-shadow: 2px 2px 2px #343232; }
+
+@media (max-width: 425px) {
+  main {
+    height: 100vh; }
+    main .imgPrincipal {
+      height: 6vh;
+      margin-top: 5rem; }
+    main #txtMain {
+      width: 90%;
+      margin-top: 10rem;
+      font-size: 1rem;
+      line-height: 1.9; } }
 
 #queHacemos {
   font-family: 'Montserrat', sans-serif;
@@ -203,6 +216,30 @@ main {
         width: 60%;
         text-align: center;
         text-shadow: 0.1px 0.1px 0.1px #6c6a6a; }
+
+@media (max-width: 425px) {
+  #queHacemos {
+    margin-top: 2rem; }
+    #queHacemos h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+    #queHacemos .botonSaberMas {
+      font-size: 1rem;
+      padding: 0.4rem;
+      font-weight: 500; }
+    #queHacemos .contenedorQueHacemos {
+      width: 100%; }
+      #queHacemos .contenedorQueHacemos .iconosQueHacemos {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #queHacemos .contenedorQueHacemos .iconosQueHacemos .iconQH {
+          width: 4rem; }
+        #queHacemos .contenedorQueHacemos .iconosQueHacemos .parrafoQH {
+          font-weight: 500;
+          font-size: 0.5rem; } }
 
 #nosotros {
   font-family: 'Montserrat', sans-serif;
@@ -257,6 +294,36 @@ main {
             line-height: 1.6;
             margin-top: 1rem; }
 
+@media (max-width: 425px) {
+  #nosotros {
+    margin-top: 2rem; }
+    #nosotros .infoQuienesSomos .tituloNosotros {
+      font-size: 2rem; }
+    #nosotros .infoQuienesSomos .parrafoNosotros {
+      width: 98%;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      line-height: 1.5; }
+    #nosotros .infoNosotros {
+      margin-top: 2rem; }
+      #nosotros .infoNosotros .cardsNosotros {
+        flex-direction: column;
+        width: 90%; }
+        #nosotros .infoNosotros .cardsNosotros .card {
+          display: flex;
+          flex-direction: column; }
+          #nosotros .infoNosotros .cardsNosotros .card .imgCard {
+            width: 11rem;
+            height: 13rem; }
+          #nosotros .infoNosotros .cardsNosotros .card .txtCard {
+            margin: 1rem;
+            font-size: 0.7rem; }
+            #nosotros .infoNosotros .cardsNosotros .card .txtCard .tituloCard {
+              text-shadow: none; }
+            #nosotros .infoNosotros .cardsNosotros .card .txtCard .parrafoCard {
+              line-height: 1.6;
+              margin-top: 0.4rem; } }
+
 #elegirnos {
   font-family: 'Montserrat', sans-serif;
   height: auto;
@@ -287,6 +354,18 @@ main {
   width: 60%;
   margin-top: 40px; }
 
+@media (max-width: 425px) {
+  #elegirnos {
+    margin-top: 2rem; }
+  .tituloElegirnos {
+    font-size: 2rem; }
+  .parrafoElegirnos {
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    width: 90%;
+    margin-top: 20px; } }
+
 #podcast {
   display: flex;
   flex-direction: column;
@@ -311,6 +390,20 @@ main {
     #podcast .infoPodcast .txtPodcast {
       color: #484a55;
       margin: 2rem; }
+
+@media (max-width: 425px) {
+  #podcast {
+    margin-top: 2rem; }
+    #podcast h1 {
+      font-size: 2rem; }
+    #podcast .infoPodcast {
+      flex-direction: column;
+      margin-top: 1rem; }
+      #podcast .infoPodcast a .imgPodcast {
+        width: 8rem; }
+      #podcast .infoPodcast .txtPodcast {
+        margin: 1.2rem;
+        font-size: 0.8rem; } }
 
 #contacto {
   display: flex;
@@ -352,6 +445,27 @@ main {
         color: #2E3657;
         font-family: 'Montserrat', sans-serif; }
 
+@media (max-width: 425px) {
+  #contacto {
+    margin-top: 3rem; }
+    #contacto h1 {
+      font-size: 2rem;
+      color: #2E3657;
+      text-align: center; }
+    #contacto .cardsContacto {
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 2rem; }
+      #contacto .cardsContacto .cardInfoContacto {
+        margin-top: 1rem; }
+        #contacto .cardsContacto .cardInfoContacto img {
+          width: 4rem; }
+        #contacto .cardsContacto .cardInfoContacto p {
+          margin-top: 0.7rem;
+          font-size: 0.7rem; }
+        #contacto .cardsContacto .cardInfoContacto .txtContacto {
+          margin-top: 0.5rem; } }
+
 #empresas {
   padding-top: 80px; }
   #empresas .empresasTitulo {
@@ -372,6 +486,18 @@ main {
     color: #E19A65; }
   #empresas .swiper-pagination {
     display: none; }
+
+@media (max-width: 425px) {
+  #empresas {
+    padding-top: 0px; }
+    #empresas .empresasTitulo {
+      font-size: 2rem;
+      margin-top: 3rem; }
+    #empresas .empresasCards {
+      width: 90%; }
+      #empresas .empresasCards .empresasImagen {
+        margin: 80px 20px;
+        width: 6rem; } }
 
 .banner-image {
   background-image: url(../img/rawpixel.jpg);
@@ -407,7 +533,8 @@ main {
   margin-right: 10vh; }
 
 .hacemos__titulos {
-  font-size: 5vh;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
   color: #2E3657;
   text-shadow: 0.1px 0.1px 0.1px #6c6a6a; }
 
