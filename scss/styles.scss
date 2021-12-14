@@ -233,7 +233,7 @@ main {
 
     }
 
-    .txtMain {
+    #txtMain {
         width: 60%;
         text-align: center;
         margin-top: 12rem;
@@ -249,7 +249,7 @@ main {
 
 #queHacemos {
     font-family: 'Montserrat', sans-serif;
-    height: 105vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -322,11 +322,12 @@ main {
 
 #nosotros {
     font-family: 'Montserrat', sans-serif;
-    height: 88vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
 
     .infoQuienesSomos {
 
@@ -402,11 +403,12 @@ main {
 
 #elegirnos {
     font-family: 'Montserrat', sans-serif;
-    height: 75vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
 }
 
 .infoElegirnos {
@@ -446,6 +448,7 @@ main {
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 5rem;
 
     h1 {
         font-size: 3rem;
