@@ -361,7 +361,9 @@ main {
             align-items: center;
 
                 .iconQH {
-                    width: 4rem;
+                    width: 85px;
+                    height: 85px;
+                    margin: 15px;
                 }
 
                 .parrafoQH {
@@ -702,7 +704,7 @@ main {
         margin-top: 3rem;
 
         h1 {
-            font-size: 2rem;
+            font-size: 1.7rem;
             color: $colorPrimario;
             text-align: center;
         }
@@ -773,7 +775,7 @@ main {
         padding-top: 0px;
 
         .empresasTitulo {
-            font-size: 2rem;
+            font-size: 1.7rem;
             margin-top: 3rem;
 
         }
@@ -846,7 +848,35 @@ main {
 
 }
 
-
+@media (max-width: 425px) {
+    .banner-image {
+        margin-top: 135px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .div-banner {
+        margin: 0px;
+    }
+    
+    #h1-banner {
+        font-size: 22px;
+        margin: 10px 0px;
+    }
+    .hacemos__img {
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 80px;
+        height: 100px;
+    }
+    .hacemos__titulos {
+        font-size: 1.3rem;
+    }
+    .hacemos__parrafos {
+        margin: 30px;
+        line-height: 1.7rem;
+    }    
+}
 
 
 

@@ -236,7 +236,9 @@ main {
         justify-content: center;
         align-items: center; }
         #queHacemos .contenedorQueHacemos .iconosQueHacemos .iconQH {
-          width: 4rem; }
+          width: 85px;
+          height: 85px;
+          margin: 15px; }
         #queHacemos .contenedorQueHacemos .iconosQueHacemos .parrafoQH {
           font-weight: 500;
           font-size: 0.5rem; } }
@@ -449,7 +451,7 @@ main {
   #contacto {
     margin-top: 3rem; }
     #contacto h1 {
-      font-size: 2rem;
+      font-size: 1.7rem;
       color: #2E3657;
       text-align: center; }
     #contacto .cardsContacto {
@@ -491,7 +493,7 @@ main {
   #empresas {
     padding-top: 0px; }
     #empresas .empresasTitulo {
-      font-size: 2rem;
+      font-size: 1.7rem;
       margin-top: 3rem; }
     #empresas .empresasCards {
       width: 90%; }
@@ -543,6 +545,27 @@ main {
   color: #484a55;
   line-height: 2;
   font-family: 'Montserrat', sans-serif; }
+
+@media (max-width: 425px) {
+  .banner-image {
+    margin-top: 135px;
+    margin-right: 10px;
+    margin-left: 10px; }
+  .div-banner {
+    margin: 0px; }
+  #h1-banner {
+    font-size: 22px;
+    margin: 10px 0px; }
+  .hacemos__img {
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 80px;
+    height: 100px; }
+  .hacemos__titulos {
+    font-size: 1.3rem; }
+  .hacemos__parrafos {
+    margin: 30px;
+    line-height: 1.7rem; } }
 
 footer {
   height: 35vh;
