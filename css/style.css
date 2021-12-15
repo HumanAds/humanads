@@ -243,6 +243,21 @@ main {
           font-weight: 500;
           font-size: 0.5rem; } }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contenedorQueHacemos {
+    width: 100% !important; }
+  .iconosQueHacemos {
+    margin: 1rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .iconQH {
+    width: 8rem;
+    height: 8rem; }
+  .parrafoQH {
+    font-size: 1rem; } }
+
 #nosotros {
   font-family: 'Montserrat', sans-serif;
   height: auto;
@@ -325,6 +340,12 @@ main {
             #nosotros .infoNosotros .cardsNosotros .card .txtCard .parrafoCard {
               line-height: 1.6;
               margin-top: 0.4rem; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cardsNosotros {
+    display: block !important; }
+  .card {
+    margin: 2rem 0; } }
 
 #elegirnos {
   font-family: 'Montserrat', sans-serif;
@@ -565,6 +586,18 @@ main {
     font-size: 1.3rem; }
   .hacemos__parrafos {
     margin: 30px;
+    line-height: 1.7rem; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .div-banner {
+    margin: 50px 0; }
+  .hacemos__img {
+    margin-left: 50px;
+    margin-right: 10px; }
+  .hacemos__titulos {
+    font-size: 1.5rem; }
+  .hacemos__parrafos {
+    margin: 40px 80px;
     line-height: 1.7rem; } }
 
 footer {

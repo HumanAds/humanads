@@ -375,6 +375,31 @@ main {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contenedorQueHacemos {
+        width: 100% !important;
+    }
+
+    .iconosQueHacemos {
+        margin: 1rem !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iconQH {
+        width: 8rem;
+        height: 8rem;
+            
+    }
+
+    .parrafoQH {
+        font-size: 1rem;
+    }
+}
+
+
 
 // --------- NOSOTROS --------- //
 
@@ -509,6 +534,16 @@ main {
                 }
             }
         }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cardsNosotros {
+        display: block !important;
+    }
+
+    .card {
+        margin: 2rem 0;
     }
 }
 
@@ -876,6 +911,26 @@ main {
         margin: 30px;
         line-height: 1.7rem;
     }    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .div-banner {
+        margin: 50px 0;
+    }
+
+    .hacemos__img  {
+        margin-left: 50px;
+        margin-right: 10px;
+    }
+
+    .hacemos__titulos {
+        font-size: 1.5rem;
+    }
+
+    .hacemos__parrafos {
+        margin: 40px 80px;
+        line-height: 1.7rem;
+    }
 }
 
 
