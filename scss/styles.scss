@@ -243,7 +243,6 @@ main {
     .imgPrincipal {
         height: 10vh;
         margin-top: 7rem;
-
     }
 
     #txtMain {
@@ -271,6 +270,22 @@ main {
             margin-top: 10rem;
             font-size: 1rem;
             line-height: 1.9;
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    main {
+    
+        .imgPrincipal {
+            height: 10vh;
+            margin-top: 5rem;
+        }
+    
+        #txtMain {
+            width: 70%;
+            margin-top: 5rem;
+            font-size: 2.2rem;
         }
     }
 }
@@ -372,6 +387,8 @@ main {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                width: 10rem;
+                height: 8rem;
 
                 .iconQH {
                     width: 85px;
@@ -381,7 +398,7 @@ main {
 
                 .parrafoQH {
                     font-weight: 500;
-                    font-size: 0.5rem;
+                    font-size: 0.6rem;
                 }
             }
         }
@@ -913,9 +930,9 @@ main {
 
     .hacemos__img {
         margin-left: 25px;
-        margin-right: 25px;
-        width: 80px;
-        height: 100px;
+        margin-right: 14px;
+        width: 6rem;
+        height: auto;
     }
 
     .hacemos__titulos {
