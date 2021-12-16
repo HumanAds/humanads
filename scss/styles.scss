@@ -966,6 +966,38 @@ main {
     }
 }
 
+@media (min-width: 1630px) and (max-width: 2100px) {
+    .banner-image {
+        margin: 75px 100px;
+    }
+
+    .div-banner {
+        margin: 150px 0;
+        width: 80%;
+    }
+
+    #h1-banner {
+        font-size: 40px;
+    }
+
+}
+
+@media (min-width: 2150px) and (max-width: 2600px) {
+    .banner-image {
+        margin: 75px 120px;
+    }
+
+    .div-banner {
+        margin: 185px 0;
+        width: 75%;
+    }
+
+    #h1-banner {
+        font-size: 50px;
+    }
+
+}
+
 // --------- FOOTER --------- //
 
 
