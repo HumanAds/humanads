@@ -101,6 +101,9 @@ header {
     .dark a:hover {
       color: #E19A65; }
 
+.labelDark {
+  background-color: white; }
+
 @media (max-width: 1093px) {
   header .logo {
     padding-left: 25px; }
@@ -119,6 +122,12 @@ header {
     background: #2E3657;
     z-index: 1; }
     header .menu li {
+      margin: 10px;
+      font-size: 1em; }
+  header .menuQueHacemos {
+    background: white;
+    z-index: 1; }
+    header .menuQueHacemos li {
       margin: 10px;
       font-size: 1em; }
   header nav label {
@@ -448,13 +457,15 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 70%;
+    flex-wrap: wrap;
+    width: 50%;
     margin-top: 4rem; }
     #contacto .cardsContacto .cardInfoContacto {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      margin: 3rem; }
       #contacto .cardsContacto .cardInfoContacto img {
         width: 7rem; }
       #contacto .cardsContacto .cardInfoContacto p {
@@ -575,7 +586,7 @@ main {
   .div-banner {
     margin: 0px; }
   #h1-banner {
-    font-size: 22px;
+    font-size: 20px;
     margin: 10px 0px; }
   .hacemos__img {
     margin-left: 25px;
@@ -585,8 +596,9 @@ main {
   .hacemos__titulos {
     font-size: 1.3rem; }
   .hacemos__parrafos {
-    margin: 30px;
-    line-height: 1.7rem; } }
+    margin: 20px;
+    line-height: 1.4rem;
+    font-size: 0.9rem; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .div-banner {
@@ -620,30 +632,6 @@ footer {
       text-align: center;
       font-size: 0.9rem;
       margin-top: 0.5rem; }
-  footer .socialMedia {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem; }
-    footer .socialMedia .redesSociales {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: row; }
-      footer .socialMedia .redesSociales .column div {
-        display: flex;
-        flex-direction: row;
-        margin: 1rem; }
-        footer .socialMedia .redesSociales .column div a {
-          text-decoration: none; }
-        footer .socialMedia .redesSociales .column div .txtRedesSociales {
-          color: #8f8a8a; }
-        footer .socialMedia .redesSociales .column div i {
-          color: lightskyblue;
-          margin-left: 1rem;
-          font-size: 25px; }
-          footer .socialMedia .redesSociales .column div i:hover {
-            color: #E19A65; }
 
 .hvr-grow {
   display: inline-block;
