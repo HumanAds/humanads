@@ -274,6 +274,26 @@ main {
     }
 }
 
+@media (min-width: 425px) and (max-width: 768px) {
+    main {
+        height: 88vh;
+
+        .imgPrincipal {
+            height: 9vh;
+            margin-top: 4rem;
+        }
+
+        #txtMain {
+            width: 80%;
+            margin-top: 8rem;
+            font-size: 1.6rem;
+            line-height: 1.9;
+        }
+    }
+}
+
+
+
 @media (min-width: 1024px) and (max-width: 1440px){
     main {
     
